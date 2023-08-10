@@ -1,0 +1,64 @@
+.bgWall{
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.title{
+   font-size: 3.9rem; 
+}
+.bgText{
+    font-size: 1.5rem;
+}
+.text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.9rem;
+    color: aliceblue;
+}
+.about_container{
+    width: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+
+
+/* -------------------------- MEDIA QUERY  --------------------- */
+
+@media screen and (max-width: 586px) {
+    .bgWall{
+        width: 100%;
+        height: 25vh;
+    }
+    .bgText{
+        width: 93%;
+        font-size: 1rem;
+        color: aliceblue;
+        text-align: center;
+    }
+    .title{
+        font-size: 2rem; 
+        margin-bottom: 2vh;
+     }
+     .bgText{
+         font-size: 1rem;
+     }
+     .text{
+        width: 100%;
+    }
+    .about_container{
+        width: 93%;
+    }
+}

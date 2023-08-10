@@ -1,0 +1,59 @@
+nav{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin: 1px auto;
+    background-color: rgb(240, 248, 255, 0.2);
+    position: sticky;
+    top: 0;
+    color: rgb(62, 62, 62);
+    border-bottom: 1px solid rgb(0, 0, 134);
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_btn{
+    display: flex;
+    gap: 16px;
+    transition: .6s linear ease-out;
+}
+.navBtn{
+    text-decoration: none;
+    color: black;
+    font-size: 1.23rem;
+}
+.navBtn:hover{
+    /* background-color: ; */
+    color: #7843e9;
+}
+
+
+
+/* ----------------- MEDIA QUERY ------------- */
+
+@media screen and (max-width : 586px) {
+    nav{
+        width: 93%;
+    }
+    .logo h1{
+        font-size: 1.4rem;
+    }
+    .nav_btn{
+        display: flex;
+        align-items: center;
+    }
+    .navBtn{
+        font-size: 0.7rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .navBtn:hover{
+        color: #7843e9;
+    }
+}

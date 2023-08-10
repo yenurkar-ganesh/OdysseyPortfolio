@@ -1,0 +1,118 @@
+.bgWall {
+  background-image: url(/public/images/renata-adrienn-ebvCsRypmxM-unsplash.jpg);
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.projectTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #515151;
+}
+
+.project_container {
+  width: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  position: relative;
+}
+.project_card {
+  width: 100%;
+  display: flex;
+  gap: 18px;
+  border: 2px solid lightgray;
+  border-radius: 12px;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.13);
+  padding: 18px;
+  align-items: center;
+}
+.projectImg {
+  width: 50%;
+}
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+.project_info {
+  width: 50%;
+}
+.techStack {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skills {
+  padding: 8px 20px;
+  border: 2px solid lightgray;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.link_btn {
+  width: 40%;
+  border: none;
+  color: aliceblue;
+  background-color: #7843e9;
+  font-size: 20px;
+  padding: 10px 48px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* ------------ MEDIA QUERY ------------- */
+
+@media screen and (max-width: 586px){
+  .bgWall {
+    height: 25vh;
+    position: relative;
+  }
+  .projectTitle {
+    font-weight: 777;
+  }
+  .project_container {
+    width: 100%;
+  }
+  .project_card {
+    width: 100%;
+    flex-direction: column;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    padding: none;
+  }
+  .projectImg {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .project_info {
+    width: 100%;
+  }
+
+  .techStack {
+    width: 100%;
+    gap: 5px;
+  }
+  .skills {
+    font-size: 0.9rem;
+  }
+  .link_btn {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   color: aliceblue;
+  }
+}
